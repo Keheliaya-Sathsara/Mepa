@@ -1,1 +1,135 @@
-<p>landing-page works!</p>
+<header>
+    <!-- Intro settings -->
+    <style>
+      /* Default height for small devices */
+      #intro-example {
+        height: 400px;
+      }
+  
+      /* Height for devices larger than 992px */
+      @media (min-width: 992px) {
+        #intro-example {
+          height: 600px;
+        }
+      }
+    </style>
+  
+        <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <!-- Container wrapper -->
+        <div class="container" >
+        <!-- Navbar brand -->
+        <a class="navbar-brand me-2" href="#">
+            <img
+            src="../../assets/Emblem_of_Sri_Lanka 1.png"
+            height="36"
+            alt=""
+            loading="lazy"
+            style="margin-top: -1px;"
+            />
+        </a>
+
+        <a class="navbar-brand me-2" href="#">
+            <img
+            src="../../assets/logo.png"
+            height="36"
+            alt=""
+            loading="lazy"
+            style="margin-top: -1px;"
+            />
+        </a>
+
+        <a class="navbar-brand me-2" href="#">
+            <img
+            src="../../assets/Mask group.png"
+            height="36"
+            alt=""
+            loading="lazy"
+            style="margin-top: -1px;"
+            />
+        </a>
+    
+        <!-- Toggle button -->
+        <button
+            class="navbar-toggler"
+            type="button"
+            (click)="buttonsNav.toggle()"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <i class="fas fa-bars"></i>
+        </button>
+    
+        <!-- Collapsible wrapper -->
+        <div
+            class="collapse navbar-collapse"
+            id="navbarButtonsExample"
+            mdbCollapse
+            #buttonsNav="mdbCollapse"
+        >
+            <!-- Left links -->
+            <ul class="navbar-nav ms-auto me-3 mb-2 mb-lg-0 " >
+            <li class="nav-item">
+                <a class="nav-link " href="#" style="color: black; font-weight: 500;">English &nbsp;|</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color: black; font-weight: 500;">සිංහල &nbsp;|</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color: black; font-weight: 500;">தமிழ்</a>
+            </li>
+            </ul>
+
+            
+            <!-- Left links -->
+    
+            <div class="d-flex align-items-center ">
+            <button type="button" class="btn btn-outline-light px-5 me-2" style="color: #0242FE; border-radius: 10px; border-color: #0242FE; border-width: 2px;">
+                Login
+            </button>
+            <button type="button" class="btn btn-primary px-5 me-3" style="background-color: #0242FE; border-radius: 10px;">
+                Register
+            </button>
+            
+            </div>
+        </div>
+        <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+  
+    <!-- Background image -->
+    <div
+      id="intro-example"
+      class="p-5 text-center bg-image"
+      style="background-image: url('../../assets/concept-environmental-pollution\ 1.png'); height: 100vh; background-size: cover; background-position: center; background-attachment: fixed;"
+    >
+      <div class="mask" style="background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1));">
+        <div class="d-flex justify-content-center align-items-center h-100">
+          <div class="text-white">
+            <h1 class="mb-3">Learn Bootstrap 5 with MDB</h1>
+            <h5 class="mb-4">Best & free guide of responsive web design</h5>
+            <a
+              class="btn btn-outline-light btn-lg m-2"
+              href="https://www.youtube.com/watch?v=c9B4TPnak1A"
+              role="button"
+              rel="nofollow"
+              target="_blank"
+              >Start tutorial</a
+            >
+            <a
+              class="btn btn-outline-light btn-lg m-2"
+              href="https://mdbootstrap.com/docs/angular/"
+              target="_blank"
+              role="button"
+              >Download MDB UI KIT</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Background image -->
+  </header>
