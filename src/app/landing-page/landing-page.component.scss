@@ -12,7 +12,7 @@
 // Love dynamically typed text? You're gonna love this
 // Edit these strings to see them typed on the screen:
 $strings: (
-	"Clear"
+	"Clean"
 	"Protect"
 	"Safe"
 );
@@ -111,6 +111,11 @@ $currentPercentage: 0;
 		animation: typed #{$durTotal + "s"} linear 2s infinite, beam-blink 1s infinite;
 	}
 	
+}
+
+// clickable image button
+.btnimg {
+    border-radius: 10px;
 }
 
 
